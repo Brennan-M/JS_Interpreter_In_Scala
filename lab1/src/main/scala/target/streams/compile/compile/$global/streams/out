@@ -1,0 +1,97 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/home/user/PPL/lab1/src/main/scala/Lab1.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/user/PPL/lab1/src/main/scala/Lab1.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/user/PPL/lab1/src/main/scala/Lab1.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/user/PPL/lab1/src/main/scala/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 54440bbc, interfacing (CompilerInterface) with Scala compiler version 2.10.4[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes:/home/user/.sbt/boot/scala-2.10.4/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/user/PPL/lab1/src/main/scala/target/scala-2.10/classes[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:1: not found: value jsy[0m
+[0m[[31merror[0m] [0mobject Lab1 extends jsy.util.JsyApplication {[0m
+[0m[[31merror[0m] [0m                    ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:2: not found: value jsy[0m
+[0m[[31merror[0m] [0m  import jsy.lab1.ast._[0m
+[0m[[31merror[0m] [0m         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:3: not found: value jsy[0m
+[0m[[31merror[0m] [0m  import jsy.lab1.Parser[0m
+[0m[[31merror[0m] [0m         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:160: not found: type Expr[0m
+[0m[[31merror[0m] [0m  def eval(e: Expr): Double = e match {[0m
+[0m[[31merror[0m] [0m              ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:161: not found: value N[0m
+[0m[[31merror[0m] [0m    case N(n) => n[0m
+[0m[[31merror[0m] [0m         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:161: not found: value n[0m
+[0m[[31merror[0m] [0m    case N(n) => n[0m
+[0m[[31merror[0m] [0m                 ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:162: not found: value Unary[0m
+[0m[[31merror[0m] [0m    case Unary(uop, e1) => {[0m
+[0m[[31merror[0m] [0m         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:163: not found: value e1[0m
+[0m[[31merror[0m] [0m      -1 * eval(e1)[0m
+[0m[[31merror[0m] [0m                ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:165: not found: value Binary[0m
+[0m[[31merror[0m] [0m    case Binary(bop, e1, e2) => bop match {[0m
+[0m[[31merror[0m] [0m         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:165: not found: value bop[0m
+[0m[[31merror[0m] [0m    case Binary(bop, e1, e2) => bop match {[0m
+[0m[[31merror[0m] [0m                                ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:166: not found: value Plus[0m
+[0m[[31merror[0m] [0m      case Plus => eval(e1) + eval(e2)[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:166: not found: value e1[0m
+[0m[[31merror[0m] [0m      case Plus => eval(e1) + eval(e2)[0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:167: not found: value Minus[0m
+[0m[[31merror[0m] [0m      case Minus => eval(e1) - eval(e2)[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:167: not found: value e1[0m
+[0m[[31merror[0m] [0m      case Minus => eval(e1) - eval(e2)[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:168: not found: value Times[0m
+[0m[[31merror[0m] [0m      case Times => eval(e1) * eval(e2)[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:168: not found: value e1[0m
+[0m[[31merror[0m] [0m      case Times => eval(e1) * eval(e2)[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:169: not found: value Div[0m
+[0m[[31merror[0m] [0m      case Div => eval(e1) / eval(e2)[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:169: not found: value e1[0m
+[0m[[31merror[0m] [0m      case Div => eval(e1) / eval(e2)[0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:176: not found: value Parser[0m
+[0m[[31merror[0m] [0m def eval(s: String): Double = eval(Parser.parse(s))[0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:183: not found: value debug[0m
+[0m[[31merror[0m] [0m    if (debug) { println("Parsing ...") }[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:185: not found: value Parser[0m
+[0m[[31merror[0m] [0m    val expr = Parser.parseFile(file)[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:187: not found: value debug[0m
+[0m[[31merror[0m] [0m    if (debug) {[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab1/src/main/scala/Lab1.scala:192: not found: value debug[0m
+[0m[[31merror[0m] [0m    if (debug) { println("Evaluating ...") }[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m23 errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
