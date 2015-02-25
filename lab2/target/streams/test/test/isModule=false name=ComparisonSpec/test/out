@@ -1,0 +1,239 @@
+[0m[[0minfo[0m] [0m[32mComparisonSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mEq[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return true if two numerical values are the same *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$10.apply$mcV$sp(Lab2Spec.scala:84)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$10.apply(Lab2Spec.scala:81)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$10.apply(Lab2Spec.scala:81)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mEq[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return false if two numerical values are not the same *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$11.apply$mcV$sp(Lab2Spec.scala:91)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$11.apply(Lab2Spec.scala:88)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$11.apply(Lab2Spec.scala:88)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mNe[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return true if two numerical values are different *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$12.apply$mcV$sp(Lab2Spec.scala:98)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$12.apply(Lab2Spec.scala:95)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$12.apply(Lab2Spec.scala:95)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mNe[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return false if two numerical values are the same *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$13.apply$mcV$sp(Lab2Spec.scala:105)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$13.apply(Lab2Spec.scala:102)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$13.apply(Lab2Spec.scala:102)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mLt[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return true if the first expression is less than the second *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$14.apply$mcV$sp(Lab2Spec.scala:112)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$14.apply(Lab2Spec.scala:109)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$14.apply(Lab2Spec.scala:109)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mLt[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return false if the first expression is not strictly less than the second *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$15.apply$mcV$sp(Lab2Spec.scala:119)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$15.apply(Lab2Spec.scala:116)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$15.apply(Lab2Spec.scala:116)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mLt[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return false if two number values are the same *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$16.apply$mcV$sp(Lab2Spec.scala:126)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$16.apply(Lab2Spec.scala:123)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$16.apply(Lab2Spec.scala:123)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mLe[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return true if the first expression is less than the second *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$17.apply$mcV$sp(Lab2Spec.scala:133)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$17.apply(Lab2Spec.scala:130)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$17.apply(Lab2Spec.scala:130)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mLe[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return false if the first expression is greater than the second *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$18.apply$mcV$sp(Lab2Spec.scala:140)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$18.apply(Lab2Spec.scala:137)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$18.apply(Lab2Spec.scala:137)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mLe[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return true if two number values are the same *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$19.apply$mcV$sp(Lab2Spec.scala:147)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$19.apply(Lab2Spec.scala:144)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$19.apply(Lab2Spec.scala:144)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mGt[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return true if the first expression is greater than the second *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$20.apply$mcV$sp(Lab2Spec.scala:154)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$20.apply(Lab2Spec.scala:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$20.apply(Lab2Spec.scala:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mGt[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return false if the first expression is not strictly greater than the second *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$21.apply$mcV$sp(Lab2Spec.scala:161)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$21.apply(Lab2Spec.scala:158)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$21.apply(Lab2Spec.scala:158)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mGt[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return false if two number values are the same *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$22.apply$mcV$sp(Lab2Spec.scala:168)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$22.apply(Lab2Spec.scala:165)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$22.apply(Lab2Spec.scala:165)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mGe[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return true if the first expression is greater than the second *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$23.apply$mcV$sp(Lab2Spec.scala:175)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$23.apply(Lab2Spec.scala:172)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$23.apply(Lab2Spec.scala:172)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mGe[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return false if the first expression is less than the second *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$24.apply$mcV$sp(Lab2Spec.scala:182)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$24.apply(Lab2Spec.scala:179)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$24.apply(Lab2Spec.scala:179)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mGe[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return true if two number values are the same *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$25.apply$mcV$sp(Lab2Spec.scala:189)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$25.apply(Lab2Spec.scala:186)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$25.apply(Lab2Spec.scala:186)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mComparisons[0m[0m
+[0m[[0minfo[0m] [0m[31m- should produce non-intuitive results given the expressions given *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$26.apply$mcV$sp(Lab2Spec.scala:196)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$26.apply(Lab2Spec.scala:193)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ComparisonSpec$$anonfun$26.apply(Lab2Spec.scala:193)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

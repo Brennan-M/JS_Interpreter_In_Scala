@@ -1,0 +1,29 @@
+[0m[[0minfo[0m] [0m[32mIfSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mIf[0m[0m
+[0m[[0minfo[0m] [0m[31m- should eval the first expression if the conditional is true *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at IfSpec$$anonfun$28.apply$mcV$sp(Lab2Spec.scala:216)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at IfSpec$$anonfun$28.apply(Lab2Spec.scala:213)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at IfSpec$$anonfun$28.apply(Lab2Spec.scala:213)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mIf[0m[0m
+[0m[[0minfo[0m] [0m[31m- should eval the second expression if the conditional is false *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at IfSpec$$anonfun$29.apply$mcV$sp(Lab2Spec.scala:223)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at IfSpec$$anonfun$29.apply(Lab2Spec.scala:220)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at IfSpec$$anonfun$29.apply(Lab2Spec.scala:220)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

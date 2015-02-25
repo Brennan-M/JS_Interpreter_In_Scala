@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0m[32mSeqSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mSeq[0m[0m
+[0m[[0minfo[0m] [0m[31m- should execute the first expression, followed by the second, and should eval to the second expression *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at SeqSpec$$anonfun$30.apply$mcV$sp(Lab2Spec.scala:234)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at SeqSpec$$anonfun$30.apply(Lab2Spec.scala:231)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at SeqSpec$$anonfun$30.apply(Lab2Spec.scala:231)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

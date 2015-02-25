@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0m[32mConstSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mConstDecl[0m[0m
+[0m[[0minfo[0m] [0m[31m- should extend the environment with the first expression results bound to the identifier, and then eval the second expression *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ConstSpec$$anonfun$27.apply$mcV$sp(Lab2Spec.scala:205)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ConstSpec$$anonfun$27.apply(Lab2Spec.scala:202)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ConstSpec$$anonfun$27.apply(Lab2Spec.scala:202)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

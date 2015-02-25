@@ -1,0 +1,71 @@
+[0m[[0minfo[0m] [0m[32mArithmeticSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mPlus[0m[0m
+[0m[[0minfo[0m] [0m[31m- should add two number values and return a number *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$5.apply$mcV$sp(Lab2Spec.scala:46)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$5.apply(Lab2Spec.scala:43)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$5.apply(Lab2Spec.scala:43)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mMinus[0m[0m
+[0m[[0minfo[0m] [0m[31m- should subtract two number values and return a number *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$6.apply$mcV$sp(Lab2Spec.scala:53)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$6.apply(Lab2Spec.scala:50)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$6.apply(Lab2Spec.scala:50)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mTimes[0m[0m
+[0m[[0minfo[0m] [0m[31m- should multiply two number values and return a number *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$7.apply$mcV$sp(Lab2Spec.scala:60)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$7.apply(Lab2Spec.scala:57)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$7.apply(Lab2Spec.scala:57)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mDiv[0m[0m
+[0m[[0minfo[0m] [0m[31m- should divide two number values and return a number *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$8.apply$mcV$sp(Lab2Spec.scala:67)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$8.apply(Lab2Spec.scala:64)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$8.apply(Lab2Spec.scala:64)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mArithmetic Operators[0m[0m
+[0m[[0minfo[0m] [0m[31m- should produce non-intuitive solutions given differing expression types *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.UnsupportedOperationException:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:106)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Lab2$.eval(Lab2.scala:111)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$9.apply$mcV$sp(Lab2Spec.scala:74)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$9.apply(Lab2Spec.scala:71)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ArithmeticSpec$$anonfun$9.apply(Lab2Spec.scala:71)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
