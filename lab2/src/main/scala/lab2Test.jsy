@@ -1,0 +1,4 @@
+const myNum = ((5*20)/((16-4)+(-2)));   
+const myBool = ((myNum > 5) && ( ((!false + 9) === 5) || ((true-1)===0)));
+const myString = ("Hello " + "World!");
+(myBool && myString === "Hello World!") ? myNum + 32 : myNum - 10
