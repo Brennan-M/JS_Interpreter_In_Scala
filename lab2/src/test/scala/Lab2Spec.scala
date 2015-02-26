@@ -47,6 +47,14 @@ class ArithmeticSpec extends FlatSpec {
     assert(e3 === N(3))
   }
 
+  "Plus" should "concatenate two strings" in {
+    val e1 = S("Hello ")
+    val e2 = S("World!")
+    val e3 = eval(Binary(Plus, e1, e2))
+    println(e3)
+    assert(e3 === S("Hello World!"))
+  }
+
   "Minus" should "subtract two number values and return a number" in {
     val e1 = N(3)
     val e2 = N(1)
@@ -125,7 +133,14 @@ class ComparisonSpec extends FlatSpec {
     val e2 = N(5)
     val e3 = eval(Binary(Lt, e1, e2))
     assert(e3 === B(false))
-  } 
+  }
+
+  "Lt" should "return false when two letters are the same" in {
+    val e1 = S("A")
+    val e2 = S("A")
+    val e3 = eval(Binary(Lt, e1, e2))
+    assert(e3 === B(false))
+  }
 
   "Le" should "return true if the first expression is less than the second" in {
     val e1 = N(5)
@@ -162,6 +177,13 @@ class ComparisonSpec extends FlatSpec {
     assert(e3 === B(false))
   } 
   
+  "Gt" should "return true for a character that comes before another in the ascii table" in {
+    val e1 = S("c")
+    val e2 = S("b")
+    val e3 = eval(Binary(Gt, e1, e2))
+    assert(e3 === B(true))
+  }
+
   "Gt" should "return false if two number values are the same" in {
     val e1 = N(5)
     val e2 = N(5)

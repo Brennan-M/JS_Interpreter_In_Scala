@@ -7,7 +7,7 @@ object Lab2 extends jsy.util.JsyApplication {
    * Brennan McConnell
    * 
    * Partner: Ian Char
-   * Collaborators: Null
+   * Collaborators: 
    */
 
   /*
@@ -89,7 +89,7 @@ object Lab2 extends jsy.util.JsyApplication {
     (v: @unchecked) match {
       case S(s) => s
       case Undefined => "undefined"
-      case B(b) = b.toString
+      case B(b) => b.toString
       case N(n) => if (n.isWhole) "%.0f" format n else n.toString
       //case function(_, _, _) => 
     }
@@ -101,7 +101,68 @@ object Lab2 extends jsy.util.JsyApplication {
 
     e match {
       /* Base Cases */
-      
+      case Binary(bop, e1, e2) =>
+        bop match {
+          case And => if (!toBoolean(eToVal(e1))) eToVal(e1)
+                      else eToVal(e2)
+          case Or => if (toBoolean(eToVal(e1))) eToVal(e1)
+                     else eToVal(e2)
+          case Plus => (e1, e2) match {
+            case (S(e1), S(e2)) => S(e1 + e2)
+            case (e1, e2) => N(toNumber(eToVal(e1)) + toNumber(eToVal(e2)))
+          }
+          case Minus => N(toNumber(eToVal(e1)) - toNumber(eToVal(e2)))
+          case Times => N(toNumber(eToVal(e1)) * toNumber(eToVal(e2)))
+          case Div => N(toNumber(eToVal(e1)) / toNumber(eToVal(e2)))
+          case Eq => B(eToVal(e1) == eToVal(e2))
+          case Ne => B(eToVal(e1) != eToVal(e2))
+          case Lt => (e1,e2) match {
+            case (S(e1),S(e2)) => B(e1 < e2)
+            case (e1,e2) => B(toNumber(eToVal(e1)) < toNumber(eToVal(e2)))
+          }
+          case Le => (e1,e2) match {
+            case (S(e1),S(e2)) => B(e1 <= e2)
+            case (e1,e2) => B(toNumber(eToVal(e1)) <= toNumber(eToVal(e2)))
+          }
+          case Gt => (e1,e2) match {
+            case (S(e1),S(e2)) => B(e1 > e2)
+            case (e1,e2) => B(toNumber(eToVal(e1)) > toNumber(eToVal(e2)))
+          }
+          case Ge => (e1,e2) match {
+            case (S(e1),S(e2)) => B(e1 >= e2)
+            case (e1,e2) => B(toNumber(eToVal(e1)) >= toNumber(eToVal(e2)))
+          }
+          case Seq => {
+            val v1 = eToVal(e1)
+            val v2 = eToVal(e2)
+            v2
+          }
+        }
+
+      case Unary(uop, e1) =>
+        uop match {
+          case Not => B(!toBoolean(eToVal(e1)))
+          case Neg => N(toNumber(eToVal(e1)) * -1)
+        }
+
+      case ConstDecl(x, e1, e2) => {
+        val vInEnv = eToVal(e1)
+        val ext_env = extend(env, x, vInEnv)
+        eval(ext_env, e2)
+      }
+
+      case Var(x) => get(env,x)
+
+      case B(b) => e
+      case S(s) => e
+      case N(n) => e
+      case Undefined => e
+
+      case If(e1, e2, e3)  => {
+        if (toBoolean(eToVal(e1))) eToVal(e2)
+        else eToVal(e3)
+      }
+
       /* Inductive Cases */
       case Print(e1) => println(pretty(eToVal(e1))); Undefined
 
