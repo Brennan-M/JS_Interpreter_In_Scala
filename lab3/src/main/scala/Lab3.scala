@@ -188,8 +188,7 @@ object Lab3 extends jsy.util.JsyApplication {
     e match {
       case N(_) | B(_) | Undefined | S(_) => e
       case Print(e1) => Print(subst(e1))
-      case ConstDecl(s,e1,e2) => if (toStr(e1) == x) ConstDecl(s,v,e2) else e
-      // Remember...
+      case ConstDecl(s,e1,e2) => if (s == x) ConstDecl(s, subst(e1), e2) else ConstDecl(s, subst(e1), subst(e2))
       case Function(p, s, b) => if (s == x) e else Function(p, s, subst(b))
       case Var(s) => if (s == x) v else e
       case Unary(uop, e1) => Unary(uop, subst(e1))
@@ -255,6 +254,7 @@ object Lab3 extends jsy.util.JsyApplication {
           case _ => Binary(bop, e1, step(e2))
         }
         case bop @ (Le|Lt|Ge|Gt|Plus|Minus|Times|Div) => Binary(bop, e1, step(e2))
+        case _ => throw new AssertionError("Add, Or, or Seq reached. Should not have happened!")
       }
       case If(e1, e2, e3) if(!isValue(e1)) => If(step(e1), e2, e3)
       case ConstDecl(x, e1, e2) if(!isValue(e1)) => ConstDecl(x, step(e1), e2)
