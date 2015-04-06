@@ -1,5 +1,5 @@
 const x = 5;
 const a = function(y) { return ((x===5) ? ("My favorite number is " + y) : ("I hate the number " + y));};
-const b = function(x) { return a(x-1);};
+const b = function(x) { return ((x===48) ? a(x-1) : b(x-1));};
 const c = function(z) { return ((z==="hello")? a(1) : b(51))};
 console.log(c("goodbye"));
