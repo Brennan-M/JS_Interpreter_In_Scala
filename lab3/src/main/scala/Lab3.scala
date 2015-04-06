@@ -189,7 +189,7 @@ object Lab3 extends jsy.util.JsyApplication {
       case N(_) | B(_) | Undefined | S(_) => e
       case Print(e1) => Print(subst(e1))
       case ConstDecl(s,e1,e2) => if (s == x) ConstDecl(s, subst(e1), e2) else ConstDecl(s, subst(e1), subst(e2))
-      case Function(p, s, b) => if (s == x) e else Function(p, s, subst(b))
+      case Function(p, s, b) => if ((Some(x) == p) || (s == x)) e else Function(p, s, subst(b))
       case Var(s) => if (s == x) v else e
       case Unary(uop, e1) => Unary(uop, subst(e1))
       case Binary(bop, e1, e2) => Binary(bop, subst(e1), subst(e2))
