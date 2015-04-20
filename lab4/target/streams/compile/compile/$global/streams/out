@@ -16,16 +16,21 @@
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/user/PPL/lab4/target/scala-2.10/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 3352a5f0, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 21e3eb3d, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes:/home/user/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/home/user/PPL/lab4/target/scala-2.10/classes:/home/user/PPL/lab4/lib/liblab4.jar:/home/user/PPL/lab4/lib/scalatest_2.10-2.0.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 8.519787883 s[0m
-[0m[[0mdebug[0m] [0mNew invalidations:[0m
-[0m[[0mdebug[0m] [0m	Set()[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
-[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
-[0m[[0mdebug[0m] [0m	Set()[0m
-[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:188: missing parameter type for expanded function ((x$6, x$7) => TFunction(x$6, x$7))[0m
+[0m[[31merror[0m] [0m          case (TFunction(_,_), TFunction(_,_)) => TFunction(_,_)[0m
+[0m[[31merror[0m] [0m                                                             ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:188: missing parameter type for expanded function ((x$6: <error>, x$7) => TFunction(x$6, x$7))[0m
+[0m[[31merror[0m] [0m          case (TFunction(_,_), TFunction(_,_)) => TFunction(_,_)[0m
+[0m[[31merror[0m] [0m                                                               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:189: missing parameter type for expanded function ((x$8) => TObj(x$8))[0m
+[0m[[31merror[0m] [0m          case (TObj(_), TObj(_)) => TObj(_)[0m
+[0m[[31merror[0m] [0m                                          ^[0m
+[0m[[31merror[0m] [0mthree errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(lab4/compile:[31mcompile[0m) Compilation failed[0m

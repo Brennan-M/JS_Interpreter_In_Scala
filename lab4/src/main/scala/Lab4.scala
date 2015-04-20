@@ -131,22 +131,66 @@ object Lab4 extends jsy.util.JsyApplication {
         case TNumber => TNumber
         case tgot => err(tgot, e1)
       }
-      case Unary(Not, e1) =>
-        throw new UnsupportedOperationException
-      case Binary(Plus, e1, e2) =>
-        throw new UnsupportedOperationException
-      case Binary(Minus|Times|Div, e1, e2) => 
-        throw new UnsupportedOperationException
-      case Binary(Eq|Ne, e1, e2) =>
-        throw new UnsupportedOperationException
-      case Binary(Lt|Le|Gt|Ge, e1, e2) =>
-        throw new UnsupportedOperationException
-      case Binary(And|Or, e1, e2) =>
-        throw new UnsupportedOperationException
-      case Binary(Seq, e1, e2) =>
-        throw new UnsupportedOperationException
-      case If(e1, e2, e3) =>
-        throw new UnsupportedOperationException
+
+      case Unary(Not, e1) => typ(e1) match {
+        case TBool => TBool
+        case tgot => err(tgot, e1)
+      }
+
+      case Binary(Plus, e1, e2) => (typ(e1), typ(e2)) match {
+        case (TString, TString) => TString
+        case (TNumber, TNumber) => TNumber
+        case (TNumber, tgot) => err(tgot, e2)
+        case (TString, tgot) => err(tgot, e2)
+        case (tgot, _) => err(tgot, e1)
+      }
+
+      case Binary(Minus|Times|Div, e1, e2) => (typ(e1), typ(e2)) match {
+        case (TNumber, TNumber) => TNumber
+        case (TNumber, tgot) => err(tgot, e2)
+        case (tgot, _) => err(tgot, e1)
+      }
+
+      case Binary(Eq|Ne, e1, e2) => 
+        if(hasFunctionTyp(typ(e1))){
+          err(typ(e1), e1)
+        } else if (hasFunctionTyp(typ(e2))) {
+          err(typ(e2), e2)
+        } else (typ(e1), typ(e2)) match {
+          case (TString, TString) => TBool
+          case (TBool, TBool) => TBool
+          case (TNumber, TNumber) => TBool
+          case (TObj(_), TObj(_)) => TBool
+        }
+
+      case Binary(Lt|Le|Gt|Ge, e1, e2) => (typ(e1), typ(e2)) match {
+        case (TString, TString) => TBool
+        case (TNumber, TNumber) => TBool
+        case (TNumber, tgot) => err(tgot, e2)
+        case (TString, tgot) => err(tgot, e2)
+        case (tgot, _) => err(tgot, e1)
+      }
+
+      case Binary(And|Or, e1, e2) => (typ(e1), typ(e2)) match {
+        case(TBool, TBool) => TBool
+        case(TBool, tgot) => err(tgot, e2)
+        case(tgot, _) => err(tgot, e1)
+      }
+
+      case Binary(Seq, e1, e2) => typ(e2)
+
+      case If(e1, e2, e3) => typ(e1) match{
+        case TBool => (typ(e2), typ(e3)) match{
+          case (TString, TString) => TString
+          case (TNumber, TNumber) => TNumber
+          case (TBool, TBool) => TBool
+          case (TUndefined, TUndefined) => TUndefined
+          case (TFunction(_,_), TFunction(_,_)) => TFunction(_,_)
+          case (TObj(_), TObj(_)) => TObj(_)
+          case (_, tgot) => err(tgot, e3)
+        }
+        case tgot => err(tgot, e1)
+      }
       case Function(p, params, tann, e1) => {
         // Bind to env1 an environment that extends env with an appropriate binding if
         // the function is potentially recursive.
