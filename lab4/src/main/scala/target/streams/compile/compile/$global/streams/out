@@ -1,0 +1,328 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/home/user/PPL/lab4/src/main/scala/Lab4.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/user/PPL/lab4/src/main/scala/Lab4.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/user/PPL/lab4/src/main/scala/Lab4.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/user/PPL/lab4/src/main/scala/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 3ba3441d, interfacing (CompilerInterface) with Scala compiler version 2.10.4[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes:/home/user/.sbt/boot/scala-2.10.4/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/user/PPL/lab4/src/main/scala/target/scala-2.10/classes[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:1: not found: value jsy[0m
+[0m[[31merror[0m] [0mobject Lab4 extends jsy.util.JsyApplication {[0m
+[0m[[31merror[0m] [0m                    ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:2: not found: value jsy[0m
+[0m[[31merror[0m] [0m  import jsy.lab4.ast._[0m
+[0m[[31merror[0m] [0m         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:3: not found: value jsy[0m
+[0m[[31merror[0m] [0m  import jsy.lab4.Parser[0m
+[0m[[31merror[0m] [0m         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:100: not found: type Typ[0m
+[0m[[31merror[0m] [0m  def hasFunctionTyp(t: Typ): Boolean = t match {[0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:101: not found: value TFunction[0m
+[0m[[31merror[0m] [0m    case TFunction(_, _) => true[0m
+[0m[[31merror[0m] [0m         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:102: not found: value TObj[0m
+[0m[[31merror[0m] [0m    case TObj(fields) if (fields exists { case (_, t) => hasFunctionTyp(t) }) => true[0m
+[0m[[31merror[0m] [0m         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:102: not found: value fields[0m
+[0m[[31merror[0m] [0m    case TObj(fields) if (fields exists { case (_, t) => hasFunctionTyp(t) }) => true[0m
+[0m[[31merror[0m] [0m                          ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:106: not found: type Typ[0m
+[0m[[31merror[0m] [0m  def typeInfer(env: Map[String,Typ], e: Expr): Typ = {[0m
+[0m[[31merror[0m] [0m                                                ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:106: not found: type Typ[0m
+[0m[[31merror[0m] [0m  def typeInfer(env: Map[String,Typ], e: Expr): Typ = {[0m
+[0m[[31merror[0m] [0m                                ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:106: not found: type Expr[0m
+[0m[[31merror[0m] [0m  def typeInfer(env: Map[String,Typ], e: Expr): Typ = {[0m
+[0m[[31merror[0m] [0m                                         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:108: not found: type Expr[0m
+[0m[[31merror[0m] [0m    def typ(e1: Expr) = typeInfer(env, e1)[0m
+[0m[[31merror[0m] [0m                ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:109: not found: type Typ[0m
+[0m[[31merror[0m] [0m    def err[T](tgot: Typ, e1: Expr): T = throw StaticTypeError(tgot, e1, e)[0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:109: not found: type Expr[0m
+[0m[[31merror[0m] [0m    def err[T](tgot: Typ, e1: Expr): T = throw StaticTypeError(tgot, e1, e)[0m
+[0m[[31merror[0m] [0m                              ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:109: not found: value StaticTypeError[0m
+[0m[[31merror[0m] [0m    def err[T](tgot: Typ, e1: Expr): T = throw StaticTypeError(tgot, e1, e)[0m
+[0m[[31merror[0m] [0m                                               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:112: not found: value Print[0m
+[0m[[31merror[0m] [0m      case Print(e1) => typ(e1); TUndefined[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:112: not found: value e1[0m
+[0m[[31merror[0m] [0m      case Print(e1) => typ(e1); TUndefined[0m
+[0m[[31merror[0m] [0m                            ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:112: not found: value TUndefined[0m
+[0m[[31merror[0m] [0m      case Print(e1) => typ(e1); TUndefined[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:113: not found: value N[0m
+[0m[[31merror[0m] [0m      case N(_) => TNumber[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:113: not found: value TNumber[0m
+[0m[[31merror[0m] [0m      case N(_) => TNumber[0m
+[0m[[31merror[0m] [0m                   ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:114: not found: value B[0m
+[0m[[31merror[0m] [0m      case B(_) => TBool[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:114: not found: value TBool[0m
+[0m[[31merror[0m] [0m      case B(_) => TBool[0m
+[0m[[31merror[0m] [0m                   ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:115: not found: value Undefined[0m
+[0m[[31merror[0m] [0m      case Undefined => TUndefined[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:115: not found: value TUndefined[0m
+[0m[[31merror[0m] [0m      case Undefined => TUndefined[0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:116: not found: value S[0m
+[0m[[31merror[0m] [0m      case S(_) => TString[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:116: not found: value TString[0m
+[0m[[31merror[0m] [0m      case S(_) => TString[0m
+[0m[[31merror[0m] [0m                   ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:117: not found: value Var[0m
+[0m[[31merror[0m] [0m      case Var(x) => env(x)[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:117: not found: value x[0m
+[0m[[31merror[0m] [0m      case Var(x) => env(x)[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:118: not found: value ConstDecl[0m
+[0m[[31merror[0m] [0m      case ConstDecl(x, e1, e2) => typeInfer(env + (x -> typ(e1)), e2)[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:118: not found: value x[0m
+[0m[[31merror[0m] [0m      case ConstDecl(x, e1, e2) => typeInfer(env + (x -> typ(e1)), e2)[0m
+[0m[[31merror[0m] [0m                                                    ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:119: not found: value Unary[0m
+[0m[[31merror[0m] [0m      case Unary(Neg, e1) => typ(e1) match {[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:119: not found: value e1[0m
+[0m[[31merror[0m] [0m      case Unary(Neg, e1) => typ(e1) match {[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:120: not found: value TNumber[0m
+[0m[[31merror[0m] [0m        case TNumber => TNumber[0m
+[0m[[31merror[0m] [0m             ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:120: not found: value TNumber[0m
+[0m[[31merror[0m] [0m        case TNumber => TNumber[0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:121: not found: value e1[0m
+[0m[[31merror[0m] [0m        case tgot => err(tgot, e1)[0m
+[0m[[31merror[0m] [0m                               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:123: not found: value Unary[0m
+[0m[[31merror[0m] [0m      case Unary(Not, e1) =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:125: not found: value Binary[0m
+[0m[[31merror[0m] [0m      case Binary(Plus, e1, e2) =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:127: not found: value Binary[0m
+[0m[[31merror[0m] [0m      case Binary(Minus|Times|Div, e1, e2) => [0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:129: not found: value Binary[0m
+[0m[[31merror[0m] [0m      case Binary(Eq|Ne, e1, e2) =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:131: not found: value Binary[0m
+[0m[[31merror[0m] [0m      case Binary(Lt|Le|Gt|Ge, e1, e2) =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:133: not found: value Binary[0m
+[0m[[31merror[0m] [0m      case Binary(And|Or, e1, e2) =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:135: not found: value Binary[0m
+[0m[[31merror[0m] [0m      case Binary(Seq, e1, e2) =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:137: not found: value If[0m
+[0m[[31merror[0m] [0m      case If(e1, e2, e3) =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:139: object Function is not a case class constructor, nor does it have an unapply/unapplySeq method[0m
+[0m[[31merror[0m] [0m      case Function(p, params, tann, e1) => {[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:142: not found: value p[0m
+[0m[[31merror[0m] [0m        val env1 = (p, tann) match {[0m
+[0m[[31merror[0m] [0m                    ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:142: not found: value tann[0m
+[0m[[31merror[0m] [0m        val env1 = (p, tann) match {[0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:144: not found: value TFunction[0m
+[0m[[31merror[0m] [0m            val tprime = TFunction(params, tret)[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:147: not found: value TUndefined[0m
+[0m[[31merror[0m] [0m          case _ => err(TUndefined, e1)[0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:147: not found: value e1[0m
+[0m[[31merror[0m] [0m          case _ => err(TUndefined, e1)[0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:152: not found: value tann[0m
+[0m[[31merror[0m] [0m        tann match {[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:157: not found: value Call[0m
+[0m[[31merror[0m] [0m      case Call(e1, args) => typ(e1) match {[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:157: not found: value e1[0m
+[0m[[31merror[0m] [0m      case Call(e1, args) => typ(e1) match {[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:158: not found: value TFunction[0m
+[0m[[31merror[0m] [0m        case TFunction(params, tret) if (params.length == args.length) => {[0m
+[0m[[31merror[0m] [0m             ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:158: not found: value params[0m
+[0m[[31merror[0m] [0m        case TFunction(params, tret) if (params.length == args.length) => {[0m
+[0m[[31merror[0m] [0m                                         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:159: not found: value params[0m
+[0m[[31merror[0m] [0m          (params, args).zipped.foreach {[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:162: not found: value tret[0m
+[0m[[31merror[0m] [0m          tret[0m
+[0m[[31merror[0m] [0m          ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:164: not found: value e1[0m
+[0m[[31merror[0m] [0m        case tgot => err(tgot, e1)[0m
+[0m[[31merror[0m] [0m                               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:166: not found: value Obj[0m
+[0m[[31merror[0m] [0m      case Obj(fields) =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:168: not found: value GetField[0m
+[0m[[31merror[0m] [0m      case GetField(e1, f) =>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:176: not found: type Bop[0m
+[0m[[31merror[0m] [0m  def inequalityVal(bop: Bop, v1: Expr, v2: Expr): Boolean = {[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:176: not found: type Expr[0m
+[0m[[31merror[0m] [0m  def inequalityVal(bop: Bop, v1: Expr, v2: Expr): Boolean = {[0m
+[0m[[31merror[0m] [0m                                  ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:176: not found: type Expr[0m
+[0m[[31merror[0m] [0m  def inequalityVal(bop: Bop, v1: Expr, v2: Expr): Boolean = {[0m
+[0m[[31merror[0m] [0m                                            ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:179: not found: value S[0m
+[0m[[31merror[0m] [0m      case (S(s1), S(s2)) =>[0m
+[0m[[31merror[0m] [0m            ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:179: not found: value S[0m
+[0m[[31merror[0m] [0m      case (S(s1), S(s2)) =>[0m
+[0m[[31merror[0m] [0m                   ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:181: not found: value Lt[0m
+[0m[[31merror[0m] [0m          case Lt => s1 < s2[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:181: not found: value s1[0m
+[0m[[31merror[0m] [0m          case Lt => s1 < s2[0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:182: not found: value Le[0m
+[0m[[31merror[0m] [0m          case Le => s1 <= s2[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:182: not found: value s1[0m
+[0m[[31merror[0m] [0m          case Le => s1 <= s2[0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:183: not found: value Gt[0m
+[0m[[31merror[0m] [0m          case Gt => s1 > s2[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:183: not found: value s1[0m
+[0m[[31merror[0m] [0m          case Gt => s1 > s2[0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:184: not found: value Ge[0m
+[0m[[31merror[0m] [0m          case Ge => s1 >= s2[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:184: not found: value s1[0m
+[0m[[31merror[0m] [0m          case Ge => s1 >= s2[0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:186: not found: value N[0m
+[0m[[31merror[0m] [0m      case (N(n1), N(n2)) =>[0m
+[0m[[31merror[0m] [0m            ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:186: not found: value N[0m
+[0m[[31merror[0m] [0m      case (N(n1), N(n2)) =>[0m
+[0m[[31merror[0m] [0m                   ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:188: not found: value Lt[0m
+[0m[[31merror[0m] [0m          case Lt => n1 < n2[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:188: not found: value n1[0m
+[0m[[31merror[0m] [0m          case Lt => n1 < n2[0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:189: not found: value Le[0m
+[0m[[31merror[0m] [0m          case Le => n1 <= n2[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:189: not found: value n1[0m
+[0m[[31merror[0m] [0m          case Le => n1 <= n2[0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:190: not found: value Gt[0m
+[0m[[31merror[0m] [0m          case Gt => n1 > n2[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:190: not found: value n1[0m
+[0m[[31merror[0m] [0m          case Gt => n1 > n2[0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:191: not found: value Ge[0m
+[0m[[31merror[0m] [0m          case Ge => n1 >= n2[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:191: not found: value n1[0m
+[0m[[31merror[0m] [0m          case Ge => n1 >= n2[0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:196: not found: type Expr[0m
+[0m[[31merror[0m] [0m  def substitute(e: Expr, v: Expr, x: String): Expr = {[0m
+[0m[[31merror[0m] [0m                                               ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:196: not found: type Expr[0m
+[0m[[31merror[0m] [0m  def substitute(e: Expr, v: Expr, x: String): Expr = {[0m
+[0m[[31merror[0m] [0m                    ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:196: not found: type Expr[0m
+[0m[[31merror[0m] [0m  def substitute(e: Expr, v: Expr, x: String): Expr = {[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:197: not found: value isValue[0m
+[0m[[31merror[0m] [0m    require(isValue(v))[0m
+[0m[[31merror[0m] [0m            ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:199: not found: type Expr[0m
+[0m[[31merror[0m] [0m    def subst(e: Expr): Expr = substitute(e, v, x)[0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:199: not found: type Expr[0m
+[0m[[31merror[0m] [0m    def subst(e: Expr): Expr = substitute(e, v, x)[0m
+[0m[[31merror[0m] [0m                 ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:202: not found: value N[0m
+[0m[[31merror[0m] [0m      case N(_) | B(_) | Undefined | S(_) => e[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:202: not found: value B[0m
+[0m[[31merror[0m] [0m      case N(_) | B(_) | Undefined | S(_) => e[0m
+[0m[[31merror[0m] [0m                  ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:202: not found: value Undefined[0m
+[0m[[31merror[0m] [0m      case N(_) | B(_) | Undefined | S(_) => e[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:202: not found: value S[0m
+[0m[[31merror[0m] [0m      case N(_) | B(_) | Undefined | S(_) => e[0m
+[0m[[31merror[0m] [0m                                     ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:203: not found: value Print[0m
+[0m[[31merror[0m] [0m      case Print(e1) => Print(subst(e1))[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:203: not found: value Print[0m
+[0m[[31merror[0m] [0m      case Print(e1) => Print(subst(e1))[0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:204: not found: value Unary[0m
+[0m[[31merror[0m] [0m      case Unary(uop, e1) => Unary(uop, subst(e1))[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:204: not found: value Unary[0m
+[0m[[31merror[0m] [0m      case Unary(uop, e1) => Unary(uop, subst(e1))[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:205: not found: value Binary[0m
+[0m[[31merror[0m] [0m      case Binary(bop, e1, e2) => Binary(bop, subst(e1), subst(e2))[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:205: not found: value Binary[0m
+[0m[[31merror[0m] [0m      case Binary(bop, e1, e2) => Binary(bop, subst(e1), subst(e2))[0m
+[0m[[31merror[0m] [0m                                  ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:206: not found: value If[0m
+[0m[[31merror[0m] [0m      case If(e1, e2, e3) => If(subst(e1), subst(e2), subst(e3))[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:206: not found: value If[0m
+[0m[[31merror[0m] [0m      case If(e1, e2, e3) => If(subst(e1), subst(e2), subst(e3))[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:207: not found: value Var[0m
+[0m[[31merror[0m] [0m      case Var(y) => if (x == y) v else e[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m190 errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
