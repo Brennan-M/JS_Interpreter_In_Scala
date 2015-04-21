@@ -275,16 +275,15 @@ object Lab4 extends jsy.util.JsyApplication {
       case Var(y) => if (x == y) v else e
       case ConstDecl(y, e1, e2) => ConstDecl(y, subst(e1), if (x == y) e2 else subst(e2))
       
-      case Function(p, params, tann, e1) => params.foldLeft(e1){
-        (acc, param) => param match {
-          case (paramstr, paramtyp) => if (paramtyp == x) e
-        }
-      }
-
-      case Function(p, params, tann, e1) => if (Some(x) == p) {
-        e
-      } else {
-        Function(p, params, tann, subst(e1))
+      case Function(p, params, tann, e1) => {
+        val overlap = params.foldLeft(true)({
+          (boolAcc, param) => boolAcc && (param._1 != x)  
+        })
+        if ((!overlap) || Some(x) == p) {
+          e 
+        } else {
+         Function(p, params, tann, subst(e1)) 
+        }   
       }
 
       case Call(e1, args) => Call(subst(e1), args.map(subst))
