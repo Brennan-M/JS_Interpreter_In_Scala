@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mRunning Lab4 grader/Lab4Grader.scala[0m
+[0m[[0minfo[0m] [0mRunning Lab4 grader/Lab4Grader[0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
 [0m[[0mdebug[0m] [0m	/home/user/PPL/lab4/target/scala-2.10/classes[0m
@@ -6,22 +6,9 @@
 [0m[[0mdebug[0m] [0m	/home/user/PPL/lab4/lib/scalatest_2.10-2.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/user/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
-[0m[[31merror[0m] [0m(run-main-0) SyntaxError[0m
-[0m[[31merror[0m] [0mLab4Grader.scala:2:18: type expected[0m
-[0m[[31merror[0m] [0m  def main(args: Array[String]) {[0m
-[0m[[31merror[0m] [0m                 ^[0m
-SyntaxError
-Lab4Grader.scala:2:18: type expected
-  def main(args: Array[String]) {
-                 ^
-	at jsy.lab4.Parser$.parseTokens(Parser.scala:272)
-	at jsy.lab4.Parser$.parse(Parser.scala:298)
-	at jsy.lab4.Parser$.parseFile(Parser.scala:308)
-	at Lab4$$anonfun$3.apply(Lab4.scala:382)
-	at Lab4$$anonfun$3.apply(Lab4.scala:381)
-	at jsy.util.JsyApplication.handle(JsyApplication.scala:21)
-	at Lab4$.processFile(Lab4.scala:381)
-	at jsy.util.JsyApplication.jsy$util$JsyApplication$$doFile$1(JsyApplication.scala:39)
+[0m[[31merror[0m] [0m(run-main-0) java.lang.IllegalArgumentException: File grader/Lab4Grader does not exist.[0m
+java.lang.IllegalArgumentException: File grader/Lab4Grader does not exist.
+	at jsy.util.JsyApplication.jsy$util$JsyApplication$$doFile$1(JsyApplication.scala:45)
 	at jsy.util.JsyApplication.main(JsyApplication.scala:50)
 	at Lab4.main(Lab4.scala)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

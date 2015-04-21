@@ -231,11 +231,11 @@ object Lab4 extends jsy.util.JsyApplication {
         case (key,exp) => (key,typ(exp))
       }))
         
-      case GetField(e1, f) => e1 match{
+      case GetField(e1, f) => e1 match {
         case Obj(fields) => typ(fields(f))
         case _ => err(typ(e1), e1)
-      }
-      
+      }  
+    }  
   }
   
   
@@ -274,14 +274,24 @@ object Lab4 extends jsy.util.JsyApplication {
       case If(e1, e2, e3) => If(subst(e1), subst(e2), subst(e3))
       case Var(y) => if (x == y) v else e
       case ConstDecl(y, e1, e2) => ConstDecl(y, subst(e1), if (x == y) e2 else subst(e2))
-      case Function(p, params, tann, e1) =>
-        throw new UnsupportedOperationException
-      case Call(e1, args) =>
-        throw new UnsupportedOperationException
-      case Obj(fields) =>
-        throw new UnsupportedOperationException
-      case GetField(e1, f) =>
-        throw new UnsupportedOperationException
+      
+      case Function(p, params, tann, e1) => params.foldLeft(e1){
+        (acc, param) => param match {
+          case (paramstr, paramtyp) => if (paramtyp == x) e
+        }
+      }
+
+      case Function(p, params, tann, e1) => if (Some(x) == p) {
+        e
+      } else {
+        Function(p, params, tann, subst(e1))
+      }
+
+      case Call(e1, args) => Call(subst(e1), args.map(subst))
+      case Obj(fields) => Obj(fields.mapValues{
+          case mV => subst(mV)
+      })
+      case GetField(e1, f) => GetField(subst(e1), f)
     }
   }
   
@@ -307,18 +317,31 @@ object Lab4 extends jsy.util.JsyApplication {
       case Call(v1, args) if isValue(v1) && (args forall isValue) =>
         v1 match {
           case Function(p, params, _, e1) => {
-            val e1p = (params, args).zipped.foldRight(e1){
-              throw new UnsupportedOperationException
+            val e1p = (params, args).zipped.foldLeft(e1) {
+              (eAcc, pandargs) => pandargs match{
+                case ((paramstr, paramtyp), arg) => substitute(eAcc, arg, paramstr)
+              }
             }
             p match {
-              case None => throw new UnsupportedOperationException
-              case Some(x1) => throw new UnsupportedOperationException
+              case None => e1p
+              case Some(x1) => substitute(e1p, v1, x1)
             }
           }
           case _ => throw new StuckError(e)
         }
       /*** Fill-in more cases here. ***/
-        
+      case Binary(Minus, N(n1), N(n2)) => N(n1 - n2)
+      case Binary(Times, N(n1), N(n2)) => N(n1 * n2)
+      case Binary(Div, N(n1), N(n2)) => N(n1 / n2)
+      case If(v1, e2, e3) if(isValue(v1)) => v1 match{
+        case B(true) => e2
+        case B(false) => e3
+      }
+      case GetField(Obj(fields), f) if(fields.values forall isValue) => fields.get(f) match{
+          case Some(a) => a 
+          case None => throw new StuckError(e)
+      }
+
       /* Inductive Cases: Search Rules */
       case Print(e1) => Print(step(e1))
       case Unary(uop, e1) => Unary(uop, step(e1))
@@ -327,7 +350,10 @@ object Lab4 extends jsy.util.JsyApplication {
       case If(e1, e2, e3) => If(step(e1), e2, e3)
       case ConstDecl(x, e1, e2) => ConstDecl(x, step(e1), e2)
       /*** Fill-in more cases here. ***/
-      
+      case Call(v1, args) if(isValue(v1)) => Call(v1, mapFirst(stepIfNotValue)(args))
+      case Call(e1, args) => Call(step(e1), args)
+      //case Obj(fields) => Obj(mapFirst(stepIfNotValue)(fields.values))
+      case GetField(e1, f) => GetField(step(e1), f)
       /* Everything else is a stuck error. Should not happen if e is well-typed. */
       case _ => throw StuckError(e)
     }
