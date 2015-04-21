@@ -16,21 +16,48 @@
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/user/PPL/lab4/target/scala-2.10/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 21e3eb3d, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 1ba62e6, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes:/home/user/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/home/user/PPL/lab4/target/scala-2.10/classes:/home/user/PPL/lab4/lib/liblab4.jar:/home/user/PPL/lab4/lib/scalatest_2.10-2.0.jar[0m
-[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:188: missing parameter type for expanded function ((x$6, x$7) => TFunction(x$6, x$7))[0m
-[0m[[31merror[0m] [0m          case (TFunction(_,_), TFunction(_,_)) => TFunction(_,_)[0m
-[0m[[31merror[0m] [0m                                                             ^[0m
-[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:188: missing parameter type for expanded function ((x$6: <error>, x$7) => TFunction(x$6, x$7))[0m
-[0m[[31merror[0m] [0m          case (TFunction(_,_), TFunction(_,_)) => TFunction(_,_)[0m
-[0m[[31merror[0m] [0m                                                               ^[0m
-[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:189: missing parameter type for expanded function ((x$8) => TObj(x$8))[0m
-[0m[[31merror[0m] [0m          case (TObj(_), TObj(_)) => TObj(_)[0m
-[0m[[31merror[0m] [0m                                          ^[0m
-[0m[[31merror[0m] [0mthree errors found[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:235: 'case' expected but identifier found.[0m
+[0m[[31merror[0m] [0m        Obj(fields) => typ(fields(f))[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:236: '}' expected but ';' found.[0m
+[0m[[31merror[0m] [0m        _ => err(typ(e1), e1)[0m
+[0m[[31merror[0m] [0m^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:239: Missing closing brace `}' assumed here[0m
+[0m[[31merror[0m] [0m  }[0m
+[0m[[31merror[0m] [0m  ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:244: expected class or object definition[0m
+[0m[[31merror[0m] [0m  def inequalityVal(bop: Bop, v1: Expr, v2: Expr): Boolean = {[0m
+[0m[[31merror[0m] [0m  ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:264: expected class or object definition[0m
+[0m[[31merror[0m] [0m  def substitute(e: Expr, v: Expr, x: String): Expr = {[0m
+[0m[[31merror[0m] [0m  ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:288: expected class or object definition[0m
+[0m[[31merror[0m] [0m  def step(e: Expr): Expr = {[0m
+[0m[[31merror[0m] [0m  ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:339: expected class or object definition[0m
+[0m[[31merror[0m] [0m  this.debug = true // comment this out or set to false if you don't want print debugging information[0m
+[0m[[31merror[0m] [0m  ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:341: expected class or object definition[0m
+[0m[[31merror[0m] [0m  def inferType(e: Expr): Typ = {[0m
+[0m[[31merror[0m] [0m  ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:354: expected class or object definition[0m
+[0m[[31merror[0m] [0m  def iterateStep(e: Expr): Expr = {[0m
+[0m[[31merror[0m] [0m  ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:372: expected class or object definition[0m
+[0m[[31merror[0m] [0m  def iterateStep(s: String): Expr = iterateStep(Parser.parse(s))[0m
+[0m[[31merror[0m] [0m  ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:375: expected class or object definition[0m
+[0m[[31merror[0m] [0m  def processFile(file: java.io.File) {[0m
+[0m[[31merror[0m] [0m  ^[0m
+[0m[[31merror[0m] [0m/home/user/PPL/lab4/src/main/scala/Lab4.scala:399: eof expected but '}' found.[0m
+[0m[[31merror[0m] [0m}[0m
+[0m[[31merror[0m] [0m^[0m
+[0m[[31merror[0m] [0m12 errors found[0m
 [0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
 [0m[[31merror[0m] [0m(lab4/compile:[31mcompile[0m) Compilation failed[0m
