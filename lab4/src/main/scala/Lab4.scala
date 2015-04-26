@@ -298,7 +298,10 @@ object Lab4 extends jsy.util.JsyApplication {
     require(!isValue(e))
     
     def stepIfNotValue(e: Expr): Option[Expr] = if (isValue(e)) None else Some(step(e))
-    
+    def stepStrIfNotValue(tuple: (String, Expr)): Option[(String, Expr)] = tuple match {
+      case (str, e) => if (isValue(e)) None else Some((str, e))
+    }
+
     e match {
       /* Base Cases: Do Rules */
       case Print(v1) if isValue(v1) => println(pretty(v1)); Undefined
@@ -351,7 +354,12 @@ object Lab4 extends jsy.util.JsyApplication {
       /*** Fill-in more cases here. ***/
       case Call(v1, args) if(isValue(v1)) => Call(v1, mapFirst(stepIfNotValue)(args))
       case Call(e1, args) => Call(step(e1), args)
-      //case Obj(fields) => Obj(mapFirst(stepIfNotValue)(fields.values))
+      case Obj(fields) => {
+              val fl = fields.toList 
+              val valFields = mapFirst(stepStrIfNotValue)(fl) 
+              val nf = valFields.toMap 
+              Obj(nf)
+      }
       case GetField(e1, f) => GetField(step(e1), f)
       /* Everything else is a stuck error. Should not happen if e is well-typed. */
       case _ => throw StuckError(e)
