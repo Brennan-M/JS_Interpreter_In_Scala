@@ -1,0 +1,3 @@
+const f = function(x:bool, y:number):number {return (x ? y + 1 : y);}
+const g = function(x:number, y:string) {return (x > 3 ? y + "worked!" : y + " did not work :(");}
+g(f(true, 3), "This test...");
